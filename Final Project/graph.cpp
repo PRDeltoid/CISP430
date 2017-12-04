@@ -75,7 +75,7 @@ string Graph::lookup_airport_name(int node_id) {
         case 0:
             return "SAC"; //Sacramento
         case 1:
-            return "PHX"; //Las Vegas, NV
+            return "PHX"; //Pheonix, AZ
         case 2:
             return "PDX"; //Portland, OR
         case 3:
@@ -85,7 +85,7 @@ string Graph::lookup_airport_name(int node_id) {
         case 5:
             return "ABQ"; //Albuquerque, NM
         case 6:
-            return "SLC"; // Salt Lake City, Utah
+            return "SLC"; //Salt Lake City, Utah
         case 7:
             return "LAS"; //Las Vegas, Nevada
         case 8:
