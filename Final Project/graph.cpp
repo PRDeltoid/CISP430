@@ -69,20 +69,27 @@ void Graph::print_adjacent_airports(int node_id) {
 }
 
 //Lookup and return an airport code as a string given a node ID
+//In a larger program, this could be done via hashing the strings or city names, and using that as an index in a hash table. 
 string Graph::lookup_airport_name(int node_id) {
     switch(node_id) {
         case 0:
             return "SAC"; //Sacramento
         case 1:
-            return "LAS"; //Las Vegas
+            return "PHX"; //Las Vegas, NV
         case 2:
-            return "LAX"; //Los Angeles
+            return "PDX"; //Portland, OR
         case 3:
-            return "DFW"; //Dallas Fort Worth
+            return "BOI"; //Boise, Idaho
         case 4:
-            return "ATL"; //Atlanta
+            return "DEN"; //Denver, CO
         case 5:
-            return "ORD"; //Chicago
+            return "ABQ"; //Albuquerque, NM
+        case 6:
+            return "SLC"; // Salt Lake City, Utah
+        case 7:
+            return "LAS"; //Las Vegas, Nevada
+        case 8:
+            return "SEA"; //Seattle, Washington
         default:
             return "Unkwn"; //If not found, print unknown
     }
