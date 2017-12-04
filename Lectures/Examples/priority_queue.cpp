@@ -55,27 +55,6 @@ int main() {
     return 0;
 }
 
-/*void enqueue(int item) {
-    //Check for queue full-ness
-    if(is_full()) {
-        cout << "Cannot enqueue " << item << ". Queue full." << endl;
-        return;
-    }
-    queue[tail] = item; //Insert item into the queue
-    tail++;             //Increment the Tail index
-}*/
-
-/*int dequeue() {
-    //Check for queue emptiness
-    if(is_empty()) {
-        cout << "Cannot dequeue. Queue is empty" << endl;
-        return -1;
-    }
-    int value = queue[head].item;
-    head++;
-    return value;
-}*/
-
 int peek() {
     if(is_empty()) {
         cout << "Cannot peek. Queue is empty" << endl;
